@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-unique-naranja: #F5900D;
+  --color-unique-negro: #131518;
+  --color-unique-blanco: #EEEEEE;
+  --color-unique-gris: #64676D;
+
+  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+
+  --padding-x: 0.9375rem; /* 15px Mobile */
+}
+
+:root {
+  --color-unique-naranja: #F5900D;
+  --color-unique-negro: #131518;
+  --color-unique-blanco: #EEEEEE;
+  --color-unique-gris: #64676D;
+  --font-principal: "Plus Jakarta Sans", sans-serif;
+ 
+}
+
+
+@media (min-width: 80rem) {
+  :root {
+    --padding-x: 12.3125rem; /* 197px Desktop */
+  }
+}
+/*ESTILOS GENERALES*/
+body {
+  font-family: var(--font-principal);
+}
+/*ESTILOS HOME */
+.degrade-blanco-naranja {
+  background: linear-gradient(
+    to bottom,
+    var(--color-unique-blanco) 0%,
+    var(--color-unique-naranja) 100%
+  );
+}
+.servicios-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.servicios-lista li {
+  min-width: 0;
+}
