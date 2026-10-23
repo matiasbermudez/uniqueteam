@@ -4,9 +4,9 @@ import CardTrabajo from "./CardTrabajo.vue";
 </script>
 <template>
   <article
-    class="relative  rounded-t-[2rem] bg-[#090a0b] px-[var(--padding-x)] pt-16 pb-16 text-white"
+    class=" bg-[#090a0b] px-[var(--padding-x)] pt-16 pb-16 text-white"
   >
-    <div class="mb-8 text-start">
+    <div class="pb-[4.9rem] text-start border-b border-unique-gris">
       <h2 class="font-extrabold text-[1rem] mb-[1rem]">NUESTRO TRABAJO</h2>
       <p>Proyectos que ya pusimos en funcionamiento</p>
       <p>durante el proceso del año viciesto</p>

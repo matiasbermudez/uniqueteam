@@ -33,11 +33,12 @@ defineProps({
   overflow: hidden;
   padding: 32px 24px;
   border-radius: 24px;
- height: 100px;
+  height: 100px;
   transition:
     height 0.5s ease,
     background-color 0.4s ease,
     color 0.4s ease;
+  
 }
 
 .card-servicios h2 {

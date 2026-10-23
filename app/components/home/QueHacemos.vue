@@ -31,7 +31,7 @@ onMounted(() => {
 <template>
   <section
     ref="sectionRef"
-    class="relative z-10 -mt-8 rounded-t-[2rem] bg-unique-blanco px-[var(--padding-x)] py-16"
+    class="relative z-10 -mt-8 rounded-t-[2rem]  bg-unique-blanco px-[var(--padding-x)] py-16"
   >
     <h2 class="font-jakarta text-[1rem] font-extrabold text-unique-negro">
       QUÉ HACEMOS
