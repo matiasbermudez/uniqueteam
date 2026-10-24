@@ -50,4 +50,12 @@ const homeTrabajos = [
     tecnologias: ["Figma", "Vue.js", "Nuxt.js"]
   }
 ]
-export { navLinks, homeServicios, homeTrabajos };
+
+const socialLinks = [
+  { nombre: 'Instagram', url: 'https://instagram.com/', imagen: 'instagram' },
+  { nombre: 'Facebook', url: 'https://facebook.com/', imagen: 'facebook' },
+  { nombre: 'TikTok', url: 'https://tiktok.com/', imagen: 'tiktok' },
+  { nombre: 'YouTube', url: 'https://youtube.com/', imagen: 'youtube' },
+  { nombre: 'X', url: 'https://x.com/', imagen: 'x' }
+]
+export { navLinks, homeServicios, homeTrabajos, socialLinks };

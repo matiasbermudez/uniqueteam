@@ -1,5 +1,6 @@
 <script setup lang="ts">
     import HeaderComp from '~/components/HeaderComp.vue';
+    import FooterComp from '~/components/FooterComp.vue'; 
 </script>
 <template>
   <div>
@@ -9,8 +10,6 @@
       <slot />
     </main>
 
-    <footer>
-      <!-- Tu footer -->
-    </footer>
+    <FooterComp />
   </div>
 </template>
