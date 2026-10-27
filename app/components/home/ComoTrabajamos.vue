@@ -2,7 +2,7 @@
    
 </script>
 <template>
-    <article class="relative z-10 -mt-8 rounded-t-[2rem]  bg-unique-blanco px-[var(--padding-x)] py-16">
+    <article class="relative z-10 -mt-8 rounded-t-[2rem]  bg-unique-blanco px-[var(--padding-x)] py-16 md:rounded-t-[5rem] md:-mt-18">
         <div class="text-unique-negro flex flex-col gap-[1.375rem]">
         <h2 class="font-jakarta text-[1rem] font-extrabold ">
             CÓMO TRABAJAMOS

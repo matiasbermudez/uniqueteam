@@ -29,7 +29,7 @@ onMounted(() => {
 <template>
   <section
     ref="sectionRef"
-    class="relative z-10 -mt-6 rounded-t-[2rem] bg-unique-blanco px-[var(--padding-x)] py-16 md:rounded-t-[5rem] md:-mt-16 md:py-[6.25rem] md:px-0"
+    class="relative z-10 -mt-6 rounded-t-[2rem] bg-unique-blanco px-[var(--padding-x)] py-16 md:rounded-t-[5rem] md:rounded-b-[5rem] md:-mt-16 md:py-[6.25rem]  md:px-0"
   >
     <div class="md:flex md:justify-between md:px-[8.125rem] md:pb-[6.188rem]">
       <h2 class="font-jakarta text-[1rem] font-extrabold text-unique-negro">
