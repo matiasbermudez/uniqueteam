@@ -7,7 +7,7 @@ import { socialLinks } from "~/assets/constants";
     class="w-full bg-unique-negro text-unique-blanco  text-start  px-[2.063rem] pt-[9rem] flex flex-col gap-[4rem] "
   >
     <article >
-      <h3 class="mb-[1.68rem]">Explorar</h3>
+      <h3 class="mb-[1.5rem]">Explorar</h3>
       <div class="footer-links-info" >
         <NuxtLink to="/proyectos">Proyectos</NuxtLink>
         <NuxtLink to="/servicios">Servicios</NuxtLink>
@@ -16,7 +16,7 @@ import { socialLinks } from "~/assets/constants";
       </div>
     </article>
     <article >
-      <h3 class="mb-[1.68rem]">Estudio</h3>
+      <h3 class="mb-[1.5rem]">Estudio</h3>
       <div class="footer-links-info" >
         <p>Unique Team</p>
         <p>Diseñamos</p>
@@ -25,7 +25,7 @@ import { socialLinks } from "~/assets/constants";
       </div>
     </article>
     <article >
-      <h3 class="mb-[1.68rem]">Servicios</h3>
+      <h3 class="mb-[1.5rem]">Servicios</h3>
       <div class="footer-links-info" >
         <p>Diseño UX/UI</p>
         <p>Desarrollo</p>
@@ -37,7 +37,7 @@ import { socialLinks } from "~/assets/constants";
       </div>
     </article>
     <div class="">
-      <h3 class="mb-[1.68rem]">Mejorá</h3>
+      <h3 class="mb-[1.5rem]">Mejorá</h3>
       <p class="footer-links-info mb-[3.375rem]">
         UniqueTeam conviene porque reúne diseño, desarrollo y tecnología en un
         mismo proyecto, evitando soluciones desconectadas entre sí. La idea es

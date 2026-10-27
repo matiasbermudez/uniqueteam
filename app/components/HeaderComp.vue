@@ -1,33 +1,37 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue'
-import {navLinks} from '~/assets/constants'
-const menuAbierto = ref(false)
+import { ref, onMounted, onUnmounted } from "vue";
+import { navLinks } from "~/assets/constants";
+const menuAbierto = ref(false);
 
-const scrolled = ref(false)
+const scrolled = ref(false);
 
 function handleScroll() {
-  scrolled.value = window.scrollY > 20
+  scrolled.value = window.scrollY > 20;
 }
 
 onMounted(() => {
-  handleScroll()
-  window.addEventListener('scroll', handleScroll, { passive: true })
-})
+  handleScroll();
+  window.addEventListener("scroll", handleScroll, { passive: true });
+});
 
 onUnmounted(() => {
-  window.removeEventListener('scroll', handleScroll)
-})
+  window.removeEventListener("scroll", handleScroll);
+});
 </script>
 
 <template>
   <header
-    class="sticky top-0 z-50 w-full bg-transparent transition-colors duration-300 py-[0.875rem] flex justify-between items-center"
-    :class="scrolled ? 'bg-unique-blanco/95' : 'bg-transparent'" 
-    >
+    class="sticky top-0 z-50 w-full bg-transparent transition-colors duration-300 py-[0.875rem] flex justify-between items-center 
+          md:flex md:justify-between  "
+    :class="scrolled ? 'bg-unique-blanco/95' : 'bg-transparent'"
+  >
     <h1
-      class="text-unique-negro font-jakarta font-extrabold text-[1.25rem] leading-[1rem] tracking-normal px-[2.063rem]"
+      class="text-unique-negro font-jakarta font-extrabold text-[1.25rem] leading-[1rem] tracking-normal px-[2.063rem] md:px-[0.625rem]"
     >
-      <span class="text-unique-naranja">U</span>nique<span class="text-unique-naranja">T</span>eam
+      <span class="text-unique-naranja">U</span>nique<span
+        class="text-unique-naranja"
+        >T</span
+      >eam
     </h1>
 
     <button
@@ -48,7 +52,7 @@ onUnmounted(() => {
       ></span>
     </button>
 
-     <!-- Menú mobile -->
+    <!-- Menú mobile -->
     <nav
       v-if="menuAbierto"
       class="absolute left-0 top-full flex w-full flex-col gap-6 bg-unique-blanco/95 px-[var(--padding-x)] py-8 shadow-lg md:hidden"
@@ -63,6 +67,20 @@ onUnmounted(() => {
         {{ link.name }}
       </NuxtLink>
     </nav>
-
+    <div class="hidden items-center gap-[2rem] md:flex">
+      <NuxtLink
+        v-for="link in navLinks"
+        :key="link.href"
+        :to="link.href"
+        class="font-jakarta font-semibold text-unique-negro transition-colors hover:text-unique-naranja"
+      >
+        {{ link.name }}
+      </NuxtLink>
+      </div>
+      <div class="hidden md:flex md:px-[0.625rem]">
+        <BotonHablemos />
+      </div>
+      
+    
   </header>
 </template>
