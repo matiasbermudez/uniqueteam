@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from "vue";
 import { navLinks } from "~/assets/constants";
+import BotonHablemos from "~/components/utilities/BotonHablemos.vue";
 const menuAbierto = ref(false);
 
 const scrolled = ref(false);

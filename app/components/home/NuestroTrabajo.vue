@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { homeTrabajos } from "@/assets/constants";
-import CardTrabajo from "./CardTrabajo.vue";
+import CardTrabajo from "~/components/utilities/CardTrabajo.vue";
 </script>
 <template>
   <article

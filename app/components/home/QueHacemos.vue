@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { homeServicios } from "~/assets/constants";
-import CardServicios from "./CardServicios.vue";
+import CardServicios from "~/components/utilities/CardServicios.vue";
 import { ref, onMounted, onUnmounted } from "vue";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

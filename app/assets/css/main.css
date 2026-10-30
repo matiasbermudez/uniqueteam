@@ -67,6 +67,11 @@ body {
   padding-left: var(--padding-x);
   padding-right: var(--padding-x);
 }
+@media (min-width:768px) {
+  .conocenos {
+     background-image: url('/pelona2.webp');
+  }
+}
 .footer-links-info {
   display: flex;
   flex-direction: column;
